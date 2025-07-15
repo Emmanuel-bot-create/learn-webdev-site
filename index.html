@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apprendre la Programmation</title>
+  <!-- Police moderne -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #eef2f3, #e3eeff);
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(90deg, #4CAF50, #2E8B57);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      background: white;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+    nav a {
+      color: #333;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #4CAF50;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 2rem;
+      color: #4CAF50;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+    .card p {
+      margin-bottom: 10px;
+    }
+    pre {
+      background: #f4f4f4;
+      padding: 10px;
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #333;
+      color: #fff;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Apprendre la Programmation et le Web</h1>
+    <p>Des cours simples et modernes pour débuter avec HTML, CSS et JavaScript</p>
+  </header>
+
+  <nav>
+    <a href="#html">HTML</a>
+    <a href="#css">CSS</a>
+    <a href="#js">JavaScript</a>
+  </nav>
+
+  <section id="html">
+    <h2>✨ Cours HTML</h2>
+    <div class="cards">
+      <div class="card">
+        <p>Le HTML sert à créer la structure d'une page web.</p>
+        <pre>&lt;h1&gt;Bonjour le monde !&lt;/h1&gt;</pre>
+      </div>
+      <div class="card">
+        <p>Un paragraphe simple :</p>
+        <pre>&lt;p&gt;Ceci est un paragraphe.&lt;/p&gt;</pre>
+      </div>
+    </div>
+  </section>
+
+  <section id="css">
+    <h2>🎨 Cours CSS</h2>
+    <div class="cards">
+      <div class="card">
+        <p>Le CSS stylise votre page web.</p>
+        <pre>h1 { color: blue; font-size: 30px; }</pre>
+      </div>
+      <div class="card">
+        <p>Un fond personnalisé :</p>
+        <pre>body { background: #fafafa; }</pre>
+      </div>
+    </div>
+  </section>
+
+  <section id="js">
+    <h2>⚡ Cours JavaScript</h2>
+    <div class="cards">
+      <div class="card">
+        <p>Le JavaScript rend le site interactif.</p>
+        <pre>alert('Bonjour le monde !');</pre>
+      </div>
+      <div class="card">
+        <p>Changer le texte d’un élément :</p>
+        <pre>document.getElementById('demo').innerText = 'Salut !';</pre>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Mon Site d'Apprentissage</p>
+  </footer>
+</body>
+</html>
